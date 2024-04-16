@@ -91,4 +91,17 @@ body {
   background-color: #242B33;
   color: #fff;
   font-size: 16px;
+}
+
+a {
+  color: #fff;
+  transition: color 0.2s ease-in;
+}
+a:hover {
+  color: #D4C17F;
+}
+
+.header {
+  min-height: 840px;
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("./../img/header/header-bg.jpg") no-repeat;
 }/*# sourceMappingURL=main.css.map */
