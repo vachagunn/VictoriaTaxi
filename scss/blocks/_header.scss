@@ -1,5 +1,13 @@
 .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 30px;
+    padding-bottom: 74px;
+
     min-height: 840px;
+    
     background: linear-gradient(
         180deg, 
         #242B33 11.98%, 
@@ -8,4 +16,10 @@
     ),
     url('./../img/header/header-bg.jpg')
     no-repeat;
+}
+
+.header__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

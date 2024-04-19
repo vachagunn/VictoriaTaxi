@@ -1,0 +1,11 @@
+.header__top-logo {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-accent;
+    color: $accent;
+}
+
+.header__top-logo span {
+    color: $white;
+    text-align: center;
+}
