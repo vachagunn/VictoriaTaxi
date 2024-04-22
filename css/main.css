@@ -127,14 +127,43 @@ span {
   align-items: center;
 }
 
+.header__title {
+  position: relative;
+  padding-bottom: 121px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  color: #D4C17F;
+  font-weight: 700;
+}
+
+.header__title-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.header__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .header__top-logo {
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  font-size: 22px;
   color: #D4C17F;
 }
 
 .header__top-logo span {
+  font-size: 16px;
   color: #fff;
   text-align: center;
 }
@@ -147,4 +176,27 @@ span {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+
+.info {
+  position: relative;
+  font-size: 18px;
+}
+.info--location, .info--tel {
+  padding-left: 35px;
+}
+.info--location::before, .info--tel::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+}
+.info--location::before {
+  background-image: url("./../img/header/location.svg");
+}
+.info--tel::before {
+  background-image: url("./../img/header/phone.svg");
 }/*# sourceMappingURL=main.css.map */
