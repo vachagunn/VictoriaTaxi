@@ -6,3 +6,15 @@
     display: flex;
     column-gap: 40px;
 }
+
+.last {
+    color: $accent;
+
+    border: 2px double;
+    border-radius: 5px;
+    padding: 5px;
+
+    &:hover {
+        color: saturate($color: $accent, $amount: 100%);
+    }
+}
