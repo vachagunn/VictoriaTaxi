@@ -47,3 +47,14 @@ span {
 
     white-space: nowrap;
 }
+
+.none {
+    display: none !important;
+}
+
+.title-2 {
+    font-size: 36px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
+}
