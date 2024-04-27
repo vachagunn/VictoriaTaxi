@@ -361,6 +361,7 @@ span {
 .form__input {
   height: 50px;
   padding: 12px;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   color: #fff;
   background-color: rgba(255, 255, 255, 0.2);
