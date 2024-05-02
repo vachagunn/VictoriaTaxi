@@ -433,4 +433,17 @@ span {
 .video__link:hover .video__icon {
   transform: translate(-50%, -50%) scale(1.2);
   filter: saturate(1.5);
+}
+
+.office {
+  padding: 180px 0;
+}
+
+.office__title {
+  margin-bottom: 88px;
+}
+
+.map {
+  height: 358px;
+  background: grey;
 }/*# sourceMappingURL=main.css.map */
