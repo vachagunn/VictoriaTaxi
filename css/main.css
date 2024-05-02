@@ -446,4 +446,19 @@ span {
 .map {
   height: 358px;
   background: grey;
+}
+
+.feedback {
+  margin-bottom: 180px;
+}
+
+.feedback__title {
+  margin-bottom: 38px;
+}
+
+.feedback__form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
