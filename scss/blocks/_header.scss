@@ -57,6 +57,7 @@
 }
 
 .header__bottom {
+    font-family: $font-accent;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;

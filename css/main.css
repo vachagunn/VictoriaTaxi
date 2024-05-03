@@ -195,6 +195,7 @@ span {
 }
 
 .header__bottom {
+  font-family: "Montserrat", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -220,7 +221,7 @@ span {
 }
 
 .nav {
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.05em;
 }
 
@@ -278,8 +279,8 @@ span {
 }
 
 .benefits__item-img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 53px;
 }
 
@@ -511,6 +512,7 @@ span {
 }
 
 .footer__address {
+  font-family: "Montserrat", sans-serif;
   display: grid;
   gap: 20px;
 }
