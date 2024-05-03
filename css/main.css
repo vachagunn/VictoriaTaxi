@@ -162,8 +162,19 @@ span {
   align-items: center;
 }
 
+@media screen and (max-width: 999px) {
+  .header__nav {
+    display: none;
+  }
+}
+
 .header__nav-btn {
   display: none;
+}
+@media screen and (max-width: 999px) {
+  .header__nav-btn {
+    display: block;
+  }
 }
 
 .header__title {
