@@ -146,6 +146,10 @@ span {
   font-weight: 700;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -170,7 +174,7 @@ span {
 
 .header__top-row--mobile {
   position: fixed;
-  z-index: 9;
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
