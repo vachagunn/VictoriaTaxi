@@ -332,6 +332,7 @@ span {
 }
 
 .benefits {
+  overflow: hidden;
   padding: 120px 0;
 }
 
@@ -340,15 +341,29 @@ span {
   -moz-column-gap: 70px;
        column-gap: 70px;
 }
+@media screen and (max-width: 999px) {
+  .benefits__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px 30px;
+  }
+}
 
 .benefits__item {
   text-align: center;
 }
 
 .benefits__item-img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 53px;
+}
+@media screen and (max-width: 999px) {
+  .benefits__item-img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
 }
 
 .benefits__item-text {
@@ -356,6 +371,11 @@ span {
   line-height: 1.35;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
+}
+@media screen and (max-width: 999px) {
+  .benefits__item-text {
+    font-size: 16px;
+  }
 }
 
 .cars__title {
