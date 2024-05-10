@@ -150,12 +150,16 @@ span {
   overflow-y: hidden;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 30px;
-  padding-bottom: 74px;
+  padding-bottom: 50px;
   min-height: 840px;
   background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("./../img/header/header-bg.jpg") no-repeat;
 }
@@ -462,9 +466,29 @@ span {
 @media screen and (max-width: 959px) {
   .card__title {
     left: 30px;
-    bottom: 30px;
+    top: 30px;
     font-size: 20px;
   }
+}
+
+.card__price {
+  position: absolute;
+  z-index: 9;
+  right: 20px;
+  bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+}
+@media screen and (max-width: 959px) {
+  .card__price {
+    right: 30px;
+    bottom: 30px;
+    font-size: 16px;
+  }
+}
+.card__price span {
+  font-size: inherit;
+  color: #D4C17F;
 }
 
 .cta {
@@ -498,6 +522,7 @@ span {
 }
 
 .cta__text {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
 }
 .cta__text p + p {
