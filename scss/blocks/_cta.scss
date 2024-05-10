@@ -10,24 +10,42 @@
     linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
     url('./../../img/form/cars.jpg'),
     #c4c4c4;
+
+    @include mediaTablet {
+        padding: 60px 0;
+    }
 }
 
 .cta__title {
     margin-bottom : 17px;
+
+    @include mediaTablet {
+        .title-2 {
+            font-size: 28px;
+        }
+    }
 }
 
 .cta__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }
 
-.cta__title {
+.cta__text {
     line-height: 1.5;
 
-    // Если будет два и больше абзацей, то между ними будет отступ равный размеру шрифта = 16px
+    // Если будет два и больше абзацев, то между ними будет отступ равный размеру шрифта = 16px
     p + p {
         margin: 1em; 
+    }
+
+    @include mediaTablet {
+        font-size: 14px;
     }
 }
 
@@ -35,4 +53,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }

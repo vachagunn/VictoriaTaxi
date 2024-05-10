@@ -1,6 +1,10 @@
 .benefits {
     overflow: hidden;
     padding: 120px 0;
+
+    @include mediaTablet {
+        padding: 60px 0;
+    }
 }
 
 .benefits__row {

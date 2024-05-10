@@ -335,6 +335,11 @@ span {
   overflow: hidden;
   padding: 120px 0;
 }
+@media screen and (max-width: 959px) {
+  .benefits {
+    padding: 60px 0;
+  }
+}
 
 .benefits__row {
   display: flex;
@@ -466,9 +471,19 @@ span {
   padding: 180px 0;
   background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("./../../img/form/cars.jpg"), #c4c4c4;
 }
+@media screen and (max-width: 959px) {
+  .cta {
+    padding: 60px 0;
+  }
+}
 
 .cta__title {
   margin-bottom: 17px;
+}
+@media screen and (max-width: 959px) {
+  .cta__title .title-2 {
+    font-size: 28px;
+  }
 }
 
 .cta__wrapper {
@@ -476,18 +491,33 @@ span {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+@media screen and (max-width: 959px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 
-.cta__title {
+.cta__text {
   line-height: 1.5;
 }
-.cta__title p + p {
+.cta__text p + p {
   margin: 1em;
+}
+@media screen and (max-width: 959px) {
+  .cta__text {
+    font-size: 14px;
+  }
 }
 
 .cta__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px 30px;
+}
+@media screen and (max-width: 959px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__input {
@@ -515,6 +545,11 @@ span {
   line-height: 1.23;
   color: #E7E7E7;
   text-align: center;
+}
+@media screen and (max-width: 959px) {
+  .form__privacy--bottom {
+    grid-row: 4/5;
+  }
 }
 
 .form__btn {
