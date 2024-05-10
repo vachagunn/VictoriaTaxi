@@ -159,7 +159,7 @@ span {
   min-height: 840px;
   background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("./../img/header/header-bg.jpg") no-repeat;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header {
     min-height: unset;
     row-gap: 50px;
@@ -205,7 +205,7 @@ span {
   display: grid;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav {
     display: none;
   }
@@ -214,7 +214,7 @@ span {
 .header__nav-btn {
   display: none;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav-btn {
     display: block;
   }
@@ -229,7 +229,7 @@ span {
   color: #D4C17F;
   font-weight: 700;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__title {
     font-size: 32px;
     padding-bottom: 100px;
@@ -249,7 +249,7 @@ span {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__bottom {
     display: flex;
     flex-direction: column;
@@ -322,7 +322,7 @@ span {
 .info--tel::before {
   background-image: url("./../img/header/phone.svg");
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .info {
     font-size: 14px;
   }
@@ -341,7 +341,7 @@ span {
   -moz-column-gap: 70px;
        column-gap: 70px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -358,7 +358,7 @@ span {
   height: 80px;
   margin-bottom: 53px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__item-img {
     width: 60px;
     height: 60px;
@@ -372,7 +372,7 @@ span {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__item-text {
     font-size: 16px;
   }
@@ -381,11 +381,24 @@ span {
 .cars__title {
   margin-bottom: 88px;
 }
+@media screen and (max-width: 959px) {
+  .cars__title {
+    margin-bottom: 44px;
+  }
+  .cars__title .title-2 {
+    font-size: 28px;
+  }
+}
 
 .cars__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .cars__cards {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 .card {
@@ -440,6 +453,13 @@ span {
   right: 20px;
   bottom: 44px;
   font-size: 24px;
+}
+@media screen and (max-width: 959px) {
+  .card__title {
+    left: 30px;
+    bottom: 30px;
+    font-size: 20px;
+  }
 }
 
 .cta {
