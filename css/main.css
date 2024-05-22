@@ -642,9 +642,19 @@ span {
 .office {
   padding: 180px 0;
 }
+@media screen and (max-width: 959px) {
+  .office {
+    padding: 90px 0;
+  }
+}
 
 .office__title {
   margin-bottom: 88px;
+}
+@media screen and (max-width: 959px) {
+  .office__title {
+    margin-bottom: 44px;
+  }
 }
 
 .map {
