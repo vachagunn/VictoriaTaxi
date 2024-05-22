@@ -12,6 +12,7 @@
     #c4c4c4;
 
     @include mediaTablet {
+        overflow-x: hidden;
         padding: 60px 0;
     }
 }
