@@ -665,9 +665,19 @@ span {
 .feedback {
   margin-bottom: 180px;
 }
+@media screen and (max-width: 959px) {
+  .feedback {
+    margin-bottom: 90px;
+  }
+}
 
 .feedback__title {
   margin-bottom: 38px;
+}
+@media screen and (max-width: 959px) {
+  .feedback__title {
+    margin-bottom: 19px;
+  }
 }
 
 .feedback__form {
@@ -675,6 +685,11 @@ span {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .feedback__form {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .footer {
