@@ -693,11 +693,18 @@ span {
 }
 
 .footer {
+  font-family: "Montserrat", sans-serif;
   padding-top: 72px;
   padding-bottom: 51px;
   background-color: #2D343C;
   font-size: 14px;
   letter-spacing: 0.05rem;
+}
+@media screen and (max-width: 959px) {
+  .footer {
+    padding-top: 36px;
+    padding-bottom: 25px;
+  }
 }
 
 .footer__grid {
@@ -705,9 +712,11 @@ span {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-
-.footer__logo {
-  margin-top: -12px;
+@media screen and (max-width: 959px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px 30px;
+  }
 }
 
 .footer__nav-list {
@@ -716,7 +725,6 @@ span {
 }
 
 .footer__address {
-  font-family: "Montserrat", sans-serif;
   display: grid;
   gap: 20px;
 }
