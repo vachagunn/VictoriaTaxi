@@ -27,3 +27,19 @@ navBtn.addEventListener('click', () => {
         document.body.classList.remove('no-scroll');
     }
 });
+
+
+// Phone Mask
+mask('[data-tel-input]');
+
+// Возврат placeholder у поля для ввода телефона при снятии фокуса
+const phoneInputs = document.querySelectorAll('[data-tel-input]');
+phoneInputs.forEach((input) => {
+    input.addEventListener('input', () => {
+        if (input.value == '+') input.value = '';
+    })
+
+    input.addEventListener('blur', () => {
+        if (input.value == '+') input.value = '';
+    })
+});
