@@ -64,7 +64,7 @@
 
       <div class="header__bottom">
         <div class="text-right">
-          <a href="#section-map" class="info info--location"
+          <a href="#office" class="info info--location"
             >Бардина 28, Дом науки и техники (офис 229)</a
           >
         </div>
@@ -93,7 +93,7 @@
                 alt="Залог"
                 class="benefits__item-img"
               />
-              <p class="benefits__item-text">Залог - 10 000 руб.</p>
+              <p class="benefits__item-text">Залог 10 000 ₽</p>
             </div>
 
             <div class="benefits__item">
@@ -106,8 +106,12 @@
             </div>
 
             <div class="benefits__item">
-              <img src="" alt="" class="benefits__item-img" />
-              <p class="benefits__item-text">Что-то еще</p>
+              <img
+                src="./img/benefits/location.svg"
+                alt="Выдача в любом месте"
+                class="benefits__item-img"
+              />
+              <p class="benefits__item-text">Выдача в любом месте</p>
             </div>
           </div>
         </div>
@@ -139,13 +143,21 @@
               </p>
             </div>
 
-            <form action="" class="cta__form form">
-              <input type="text" class="form__input" placeholder="Ваше имя" />
+            <form action="send_email.php" class="cta__form form">
+              <input
+                type="text"
+                name="client_name"
+                class="form__input"
+                placeholder="Ваше имя"
+                required
+              />
               <input
                 data-tel-input
                 type="text"
+                name="client_phone"
                 class="form__input"
                 placeholder="Ваш телефон"
+                required
               />
 
               <p class="form__privacy form__privacy--bottom">
