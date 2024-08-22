@@ -119,54 +119,8 @@
             <h2 class="title-2">Наши автомобили</h2>
           </div>
 
-          <div class="cars__cards">
-            <a id="openPopupPrice" href="#!" class="card">
-              <img
-                class="card__image"
-                src="./img/cards/kia_rio.jpeg"
-                alt="Kia Rio"
-              />
-              <h3 class="card__title">Kia Rio</h3>
-              <h5 class="card__price">
-                от <span class="bold">2500 ₽</span> в сутки
-              </h5>
-            </a>
-
-            <a href="#!" class="card">
-              <img
-                class="card__image"
-                src="./img/cards/kia_cerato.jpg"
-                alt="Kia Cerato"
-              />
-              <h3 class="card__title">Комфорт</h3>
-            </a>
-
-            <a href="#!" class="card">
-              <img
-                class="card__image"
-                src="./img/cards/geely_emgrand.jpg"
-                alt="Geely Emgrand"
-              />
-              <h3 class="card__title">Geely Emgrand</h3>
-              <h5 class="card__price">
-                от <span class="bold">3500 ₽</span> в сутки
-              </h5>
-            </a>
-
-            <a href="#!" class="card">
-              <img
-                class="card__image"
-                src="./img/cards/kia_k5.jpg"
-                alt="Kia K5"
-              />
-              <h3 class="card__title">Бизнес</h3>
-            </a>
-
-            <!-- <a href="#!" class="card">
-                        <img class="card__image" src="" alt="Грузовой">
-                        <h3 class="card__title">Грузовой</h3>
-                    </a> -->
-          </div>
+          <!-- Динамический рендер карточек -->
+          <div id="cars__cards" class="cars__cards"></div>
         </div>
       </section>
 
@@ -453,6 +407,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Render Car Cards -->
+    <script src="./js/renderCars.js"></script>
 
     <!-- Modal Windows -->
     <script src="./js/modal.js" defer></script>
