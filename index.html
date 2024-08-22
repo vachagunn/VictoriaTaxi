@@ -1,258 +1,461 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Виктория Такси</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="header__top-row">
-                    <a href="#!">
-                        <!-- Логотип-картинка возможно -->
-                        <h3 class="logo-1">Виктория <span class="logo-2">прокат</span></h3>
-                    </a>
-
-                    <div class="header__nav">
-                        <nav class="nav">
-                            <ul class="nav__list">
-                                <li><a href="#!">Автопарк</a></li>
-                                <li><a href="#!">Цены</a></li>
-                                <li><a href="#!">Условия аренды</a></li>
-                                <li><a href="#!">Расположение</a></li>
-                                <li><a href="#!">Контакты</a></li>
-                                <li><a href="#!" class="last">Оставить заявку</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <div class="header__nav-btn">
-                        <button class="nav-icon-btn">
-                            <img src="./img/header/menu.svg" class="nav-icon" alt="Menu" width="50" height="50">
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+      <div class="header__top">
         <div class="container">
-            <h1 class="header__title">Аренда автомобилей <br> в Екатеринбурге
-                <a href="#benefits">
-                    <img
-                        src="./img/header/mouse.svg"
-                        alt="Scroll next"
-                        class="header__title-icon"> 
-                </a> 
-            </h1>
-        </div>
+          <div class="header__top-row">
+            <a href="#!">
+              <!-- Логотип-картинка возможно -->
+              <h3 class="logo-1">
+                Виктория <span class="logo-2">прокат</span>
+              </h3>
+            </a>
 
-        <div class="header__bottom">
-            <div class="text-right">
-                <a href="#section-map" class="info info--location">Бардина 28, Дом науки и техники (офис 229)</a>
+            <div class="header__nav">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li><a href="#cars">Автопарк</a></li>
+                  <!-- <li><a id="openPopupPrice" href="#!">Цены</a></li> -->
+                  <li><a href="#price">Цены</a></li>
+                  <li><a id="openPopupRentConditions">Условия аренды</a></li>
+                  <li><a href="#office">Расположение</a></li>
+                  <li><a href="#!">Контакты</a></li>
+                  <li><a href="#cta" class="last">Оставить заявку</a></li>
+                </ul>
+              </nav>
             </div>
-            <a href="tel:+79086397272" class="info info--tel">8 (908) 639-72-72</a>
+
+            <div class="header__nav-btn">
+              <button class="nav-icon-btn">
+                <img
+                  src="./img/header/menu.svg"
+                  class="nav-icon"
+                  alt="Menu"
+                  width="50"
+                  height="50"
+                />
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <h1 class="header__title">
+          Аренда автомобилей <br />
+          в Екатеринбурге
+          <a href="#benefits">
+            <img
+              src="./img/header/mouse.svg"
+              alt="Scroll next"
+              class="header__title-icon"
+            />
+          </a>
+        </h1>
+      </div>
+
+      <div class="header__bottom">
+        <div class="text-right">
+          <a href="#section-map" class="info info--location"
+            >Бардина 28, Дом науки и техники (офис 229)</a
+          >
+        </div>
+        <a href="tel:+79086397272" class="info info--tel">8 (908) 639-72-72</a>
+      </div>
     </header>
 
     <main>
-        <section class="benefits">
-            <h2 class="visually-hidden">Преимущества таксопарка</h2>
+      <section id="benefits" class="benefits">
+        <h2 class="visually-hidden">Преимущества таксопарка</h2>
 
-            <div class="container container--sm">
-                <div class="benefits__row">
-
-                    <div class="benefits__item">
-                        <img src="./img/benefits/new.svg" alt="Новые автомобили" class="benefits__item-img">
-                        <p class="benefits__item-text">Новые автомобили</p>
-                    </div>
-
-                    <div class="benefits__item">
-                        <img src="./img/benefits/coins.svg" alt="Залог" class="benefits__item-img">
-                        <p class="benefits__item-text">Залог - 10 000 руб.</p>
-                    </div>
-
-                    <div class="benefits__item">
-                        <img src="./img/benefits/shield.svg" alt="Страховка" class="benefits__item-img">
-                        <p class="benefits__item-text">Страховка для спокойствия</p>
-                    </div>
-
-                    <div class="benefits__item">
-                        <img src="" alt="" class="benefits__item-img">
-                        <p class="benefits__item-text">Что-то еще</p>
-                    </div>
-                    
-                </div>
+        <div class="container container--sm">
+          <div class="benefits__row">
+            <div class="benefits__item">
+              <img
+                src="./img/benefits/new.svg"
+                alt="Новые автомобили"
+                class="benefits__item-img"
+              />
+              <p class="benefits__item-text">Новые автомобили</p>
             </div>
-        </section>
 
-        <section class="cars">
-            <div class="container">
+            <div class="benefits__item">
+              <img
+                src="./img/benefits/coins.svg"
+                alt="Залог"
+                class="benefits__item-img"
+              />
+              <p class="benefits__item-text">Залог - 10 000 руб.</p>
+            </div>
 
-                <div class="cars__title">
-                    <h2 class="title-2">Наши автомобили</h2>
-                </div>
+            <div class="benefits__item">
+              <img
+                src="./img/benefits/shield.svg"
+                alt="Страховка"
+                class="benefits__item-img"
+              />
+              <p class="benefits__item-text">Страховка для спокойствия</p>
+            </div>
 
-                <div class="cars__cards">
+            <div class="benefits__item">
+              <img src="" alt="" class="benefits__item-img" />
+              <p class="benefits__item-text">Что-то еще</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <a href="#!" class="card">
-                        <img class="card__image" src="./img/cards/kia_rio.jpeg" alt="Kia Rio">
-                        <h3 class="card__title">Kia Rio</h3>
-                        <h5 class="card__price">от <span class="bold">2500 ₽</span> в сутки</h5>
-                    </a>
+      <section id="cars" class="cars">
+        <div class="container">
+          <div class="cars__title">
+            <h2 class="title-2">Наши автомобили</h2>
+          </div>
 
-                    <a href="#!" class="card">
-                        <img class="card__image" src="./img/cards/kia_cerato.jpg" alt="Kia Cerato">
-                        <h3 class="card__title">Комфорт</h3>
-                    </a>
+          <div class="cars__cards">
+            <a id="openPopupPrice" href="#!" class="card">
+              <img
+                class="card__image"
+                src="./img/cards/kia_rio.jpeg"
+                alt="Kia Rio"
+              />
+              <h3 class="card__title">Kia Rio</h3>
+              <h5 class="card__price">
+                от <span class="bold">2500 ₽</span> в сутки
+              </h5>
+            </a>
 
-                    <a href="#!" class="card">
-                        <img class="card__image" src="./img/cards/geely_emgrand.jpg" alt="Geely Emgrand">
-                        <h3 class="card__title">Geely Emgrand</h3>
-                        <h5 class="card__price">от <span class="bold">3500 ₽</span> в сутки</h5>
-                    </a>
+            <a href="#!" class="card">
+              <img
+                class="card__image"
+                src="./img/cards/kia_cerato.jpg"
+                alt="Kia Cerato"
+              />
+              <h3 class="card__title">Комфорт</h3>
+            </a>
 
-                    <a href="#!" class="card">
-                        <img class="card__image" src="./img/cards/kia_k5.jpg" alt="Kia K5">
-                        <h3 class="card__title">Бизнес</h3>
-                    </a>
+            <a href="#!" class="card">
+              <img
+                class="card__image"
+                src="./img/cards/geely_emgrand.jpg"
+                alt="Geely Emgrand"
+              />
+              <h3 class="card__title">Geely Emgrand</h3>
+              <h5 class="card__price">
+                от <span class="bold">3500 ₽</span> в сутки
+              </h5>
+            </a>
 
-                    <!-- <a href="#!" class="card">
+            <a href="#!" class="card">
+              <img
+                class="card__image"
+                src="./img/cards/kia_k5.jpg"
+                alt="Kia K5"
+              />
+              <h3 class="card__title">Бизнес</h3>
+            </a>
+
+            <!-- <a href="#!" class="card">
                         <img class="card__image" src="" alt="Грузовой">
                         <h3 class="card__title">Грузовой</h3>
                     </a> -->
+          </div>
+        </div>
+      </section>
 
-                </div>
+      <section id="cta" class="cta">
+        <div class="container">
+          <div class="cta__title">
+            <h2 class="title-2">Хотите посмотреть?</h2>
+          </div>
 
+          <div class="cta__wrapper">
+            <div class="cta__text">
+              <p>
+                Оставьте заявку и мы с Вами свяжемся! Осмотреть автомобили можно
+                на нашей парковке по адресу Бардина 28. Бронирование автомобиля
+                и оформление договора происходит в офисе 229.
+              </p>
             </div>
-        </section>
 
-        <section class="cta">
-            <div class="container">
-                <div class="cta__title">
-                    <h2 class="title-2">Хотите посмотреть?</h2>
-                </div>
+            <form action="" class="cta__form form">
+              <input type="text" class="form__input" placeholder="Ваше имя" />
+              <input
+                data-tel-input
+                type="text"
+                class="form__input"
+                placeholder="Ваш телефон"
+              />
 
-                <div class="cta__wrapper">
-                    <div class="cta__text">
-                        <p>Оставьте заявку и мы с Вами свяжемся! Осмотреть автомобили можно на нашей парковке по адресу Бардина 28. Бронирование автомобиля и оформление договора происходит в офисе 229.</p>
-                    </div>
+              <p class="form__privacy form__privacy--bottom">
+                *Мы никому не передаем ваши данные. <br />И не сохраняем ваш
+                номер в базу.
+              </p>
 
-                    <form action="" class="cta__form form">
-                        <input type="text" class="form__input" placeholder="Ваше имя">
-                        <input data-tel-input type="text" class="form__input" placeholder="Ваш телефон">
+              <button type="submit" class="form__btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
-                        <p class="form__privacy form__privacy--bottom">*Мы никому не передаем ваши данные. <br>И не сохраняем ваш номер в базу.</p>
-                        
-                        <button type="submit" class="form__btn">Отправить</button>
-                    </form>
-                </div>
-            </div>
-        </section>
+      <section id="video" class="video">
+        <h2 class="visually-hidden">Видео про таксопарк Виктория</h2>
+        <div class="container">
+          <a
+            href="https://www.youtube.com/watch?v=loSnXQRxk1Q&ab_channel=TwistMotorsports"
+            data-youtubeLightbox
+            class="video__link"
+          >
+            <img
+              src="./img/video/play.svg"
+              alt="Кнопка воспроизведения"
+              class="video__icon"
+            />
+            <img src="./img/video/video-image.jpg" alt="" />
+          </a>
+        </div>
+      </section>
 
-        <section class="video">
-            <h2 class="visually-hidden">Видео про таксопарк Виктория</h2>
-            <div class="container">
-                <a href="https://www.youtube.com/watch?v=loSnXQRxk1Q&ab_channel=TwistMotorsports" data-youtubeLightbox class="video__link">
-                    <img src="./img/video/play.svg" alt="Кнопка воспроизведения" class="video__icon">
-                    <img src="./img/video/video-image.jpg" alt="">
-                </a>
-            </div>
-        </section>
+      <section id="price" class="price">
+        <div class="container">
+          <div class="price__title">
+            <h2 class="title-2">Цены</h2>
 
-        <section class="office">
-            <div class="container">
-                <div class="office__title">
-                    <h2 class="title-2">Офис</h2>
-                </div>
-                <div class="office__map">
-                    <div class="map" id="map"></div>
-                </div>
-            </div>
-        </section>
+            <form class="price__wrapper">
+              <table class="price__table">
+                <tr>
+                  <th>Автомобиль</th>
+                  <th>1-2 суток</th>
+                  <th>3-6 суток</th>
+                  <th>7-14 суток</th>
+                  <th>15-29 суток</th>
+                  <th>30+ суток</th>
+                </tr>
 
-        <section class="feedback">
-            <div class="container">
-                <div class="feedback__title">
-                    <h2 class="title-2">Есть вопросы?</h2>
-                </div>
-                <form action="" class=" feedback__form form">
-                    <form action="" class="feedback__form form">
-                        <p class="form__privacy form__privacy--bottom">*Мы никому не передаем ваши данные. <br>И не сохраняем ваш номер в базу.</p>
-                        
-                        <input type="text" class="form__input" placeholder="Ваше имя">
-                        <input data-tel-input type="text" class="form__input" placeholder="Ваш телефон">
-                        
-                        <button type="submit" class="form__btn">Отправить</button>
-                    </form>
-                </form>
-            </div>
-        </section>
+                <tr>
+                  <td>
+                    <!-- <select name="select_car" id="select_car">
+                      <option value="rio">Kia Rio</option>
+                      <option value="cerato">Kia Cerato</option>
+                      <option value="k5">Kia K5</option>
+                    </select> -->
+                    Kia Rio
+                  </td>
+                  <td>2500 ₽</td>
+                  <td>2300 ₽</td>
+                  <td>2000 ₽</td>
+                  <td>1800 ₽</td>
+                  <td>1700 ₽</td>
+                </tr>
+
+                <tr>
+                  <td>Kia Cerato</td>
+                  <td>2500 ₽</td>
+                  <td>2300 ₽</td>
+                  <td>2000 ₽</td>
+                  <td>1800 ₽</td>
+                  <td>1700 ₽</td>
+                </tr>
+
+                <tr>
+                  <td>Kia K5</td>
+                  <td>2500 ₽</td>
+                  <td>2300 ₽</td>
+                  <td>2000 ₽</td>
+                  <td>1800 ₽</td>
+                  <td>1700 ₽</td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="office" class="office">
+        <div class="container">
+          <div class="office__title">
+            <h2 class="title-2">Офис</h2>
+          </div>
+          <div class="office__map">
+            <div class="map" id="map"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="container">
+          <div class="feedback__title">
+            <h2 class="title-2">Есть вопросы?</h2>
+          </div>
+          <form action="" class="feedback__form form">
+            <form action="" class="feedback__form form">
+              <p class="form__privacy form__privacy--bottom">
+                *Мы никому не передаем ваши данные. <br />И не сохраняем ваш
+                номер в базу.
+              </p>
+
+              <input type="text" class="form__input" placeholder="Ваше имя" />
+              <input
+                data-tel-input
+                type="text"
+                class="form__input"
+                placeholder="Ваш телефон"
+              />
+
+              <button type="submit" class="form__btn">Отправить</button>
+            </form>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                
-                <div class="footer__logo">
-                    <!-- Логотип-картинка возможно -->
-                    <h3 class="logo-1">Виктория <span class="logo-2">прокат</span></h3>
-                </div>
-                
-                <div class="footer__nav">
-                    <nav>
-                        <ul class="footer__nav-list">
-                            <li><a href="#!">Автопарк</a></li>
-                            <li><a href="#!">Цены</a></li>
-                            <li><a href="#!">Условия аренды</a></li>
-                            <li><a href="#!">Расположения</a></li>
-                            <li><a href="#!">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__logo">
+            <!-- Логотип-картинка возможно -->
+            <h3 class="logo-1">Виктория <span class="logo-2">прокат</span></h3>
+          </div>
 
-                <div class="footer__nav">
-                    <nav>
-                        <ul class="footer__nav-list">
-                            <li><a href="#!">Текст_1</a></li>
-                            <li><a href="#!">Текст_12</a></li>
-                            <li><a href="#!">Текст_123</a></li>
-                            <li><a href="#!">Текст_1234</a></li>
-                            <li><a href="#!">Текст_12345</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                                
-                <div class="footer__address">
-                    <ul class="footer__nav-list">
-                        <li>Адрес: Бардина 28 (офис 229)</li>
-                        <li>Телефон: <a href="tel:+79086397272">8 (908) 639-72-72</a></li>
-                        <li>E-mail: <a href="mailto:vachikpuper@gmail.com" class="link-bold">vachikpuper@gmail.com</a></li>
-                    </ul>
+          <div class="footer__nav">
+            <nav>
+              <ul class="footer__nav-list">
+                <li><a href="#cars">Автопарк</a></li>
+                <li><a href="#!">Цены</a></li>
+                <li><a href="#!">Условия аренды</a></li>
+                <li><a href="#office">Расположение</a></li>
+                <li><a href="#!">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
 
-                    <ul class="footer__socials">
-                        <li><a href="#!"><img src="./img/socials/youtube.svg" alt="youtube"></a></li>
-                        <li><a href="#!"><img src="./img/socials/vk.svg" alt="vk"></a></li>
-                        <li><a href="#!"><img src="./img/socials/facebook.svg" alt="facebook"></a></li>
-                        <li><a href="#!"><img src="./img/socials/instagram.svg" alt="instagram"></a></li>
-                    </ul>
-                </div>
-            
-            </div>
+          <div class="footer__nav">
+            <nav>
+              <ul class="footer__nav-list">
+                <li><a href="#video">Обзор автомобилей</a></li>
+                <li><a href="#!">Текст_12</a></li>
+                <li><a href="#!">Текст_123</a></li>
+                <li><a href="#!">Текст_1234</a></li>
+                <li><a href="#!">Текст_12345</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__address">
+            <ul class="footer__nav-list">
+              <li>Адрес: Бардина 28 (офис 229)</li>
+              <li>Телефон: <a href="tel:+79086397272">8 (908) 639-72-72</a></li>
+              <li>
+                E-mail:
+                <a href="mailto:vachikpuper@gmail.com" class="link-bold"
+                  >vachikpuper@gmail.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="footer__socials">
+              <li>
+                <a href="#!"
+                  ><img src="./img/socials/youtube.svg" alt="youtube"
+                /></a>
+              </li>
+              <li>
+                <a href="#!"><img src="./img/socials/vk.svg" alt="vk" /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="./img/socials/facebook.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#!"
+                  ><img src="./img/socials/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
+
+    <!-- Price window -->
+    <div class="modal modal-price" id="modal">
+      <div class="modal__main">
+        <h2 class="modal__title">Модальное окно - Цены</h2>
+
+        <div class="modal__container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+            error numquam ex repellat, dolorem laudantium cum necessitatibus?
+            Debitis, ipsam excepturi expedita nostrum voluptas est vitae
+            reprehenderit aperiam corrupti aliquam? Veniam!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+            error numquam ex repellat, dolorem laudantium cum necessitatibus?
+            Debitis, ipsam excepturi expedita nostrum voluptas est vitae
+            reprehenderit aperiam corrupti aliquam? Veniam!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+            error numquam ex repellat, dolorem laudantium cum necessitatibus?
+            Debitis, ipsam excepturi expedita nostrum voluptas est vitae
+            reprehenderit aperiam corrupti aliquam? Veniam!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+            error numquam ex repellat, dolorem laudantium cum necessitatibus?
+            Debitis, ipsam excepturi expedita nostrum voluptas est vitae
+            reprehenderit aperiam corrupti aliquam? Veniam!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+            error numquam ex repellat, dolorem laudantium cum necessitatibus?
+            Debitis, ipsam excepturi expedita nostrum voluptas est vitae
+            reprehenderit aperiam corrupti aliquam? Veniam!
+          </p>
+        </div>
+
+        <button class="modal__close" id="closeModal">&#10006;</button>
+      </div>
+    </div>
+
+    <!-- Conditions window -->
+    <div class="modal modal-conditions" id="modal">
+      <div class="modal__main">
+        <h2 class="modal__title">Модальное окно - Условия</h2>
+
+        <div class="modal__container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+            error numquam ex repellat, dolorem laudantium cum necessitatibus?
+            Debitis, ipsam excepturi expedita nostrum voluptas est vitae
+            reprehenderit aperiam corrupti aliquam? Veniam!
+          </p>
+        </div>
+
+        <button class="modal__close" id="closeModal">&#10006;</button>
+      </div>
+    </div>
 
     <!-- Youtube Lightbox -->
     <div id="youtubelightbox" class="youtubelightbox">
-        <div class="youtubelightbox__centeredchild">
-            <div class="youtubelightbox__videowrapper">
-                <div id="youtubelightboxPlayer"></div>
-            </div>
+      <div class="youtubelightbox__centeredchild">
+        <div class="youtubelightbox__videowrapper">
+          <div id="youtubelightboxPlayer"></div>
         </div>
+      </div>
     </div>
+
+    <!-- Modal Windows -->
+    <script src="./js/modal.js" defer></script>
 
     <!-- Yandex API -->
     <script src="https://api-maps.yandex.ru/v3/?apikey=54642090-db33-41df-ad17-c51ff80b7612&lang=ru_RU"></script>
@@ -260,12 +463,11 @@
     <!-- Telephone Mask -->
     <script src="./libs/phoneMask/mask.js"></script>
     <script src="./libs/phoneMask/mask_list.js"></script>
-    
+
     <!-- Youtube Lightbox -->
     <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
 
     <!-- Main script -->
     <script src="./js/main.js"></script>
-
-</body>
+  </body>
 </html>

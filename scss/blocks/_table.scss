@@ -1,0 +1,34 @@
+.price {
+  overflow-x: hidden;
+  font-family: $font-accent;
+  font-size: 18px;
+
+  &__wrapper {
+    overflow-x: auto;
+  }
+
+  &__table {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    white-space: nowrap;
+    // border: 2px solid $privacy;
+    // border-radius: 10px;
+
+    @include mediaTablet {
+      font-size: 16px;
+    }
+  }
+
+  &__table tr th:first-child,
+  tr td:first-child {
+    text-align: start;
+  }
+
+  &__table th,
+  td {
+    padding: 10px;
+    border: 1px solid $privacy;
+  }
+}
