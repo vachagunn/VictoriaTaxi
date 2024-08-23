@@ -160,7 +160,7 @@
             <h2 class="title-2">Цены</h2>
 
             <form class="price__wrapper">
-              <table class="price__table">
+              <table id="price__table" class="price__table">
                 <tr>
                   <th>Автомобиль</th>
                   <th>1-2 суток</th>
@@ -170,23 +170,23 @@
                   <th>30+ суток</th>
                 </tr>
 
-                <tr>
-                  <td>
-                    <!-- <select name="select_car" id="select_car">
+                <!-- <tr>
+                  <td> -->
+                <!-- <select name="select_car" id="select_car">
                       <option value="rio">Kia Rio</option>
                       <option value="cerato">Kia Cerato</option>
                       <option value="k5">Kia K5</option>
                     </select> -->
-                    Kia Rio
+                <!-- Kia Rio
                   </td>
                   <td>2500 ₽</td>
                   <td>2300 ₽</td>
                   <td>2000 ₽</td>
                   <td>1800 ₽</td>
                   <td>1700 ₽</td>
-                </tr>
+                </tr> -->
 
-                <tr>
+                <!-- <tr>
                   <td>Kia Cerato</td>
                   <td>2500 ₽</td>
                   <td>2300 ₽</td>
@@ -202,7 +202,7 @@
                   <td>2000 ₽</td>
                   <td>1800 ₽</td>
                   <td>1700 ₽</td>
-                </tr>
+                </tr> -->
               </table>
             </form>
           </div>
@@ -389,7 +389,10 @@
     <script src="./js/renderBenefits.js"></script>
 
     <!-- Render Car Cards -->
-    <script src="./js/renderCars.js"></script>
+    <script src="./js/renderCars.js" type="module"></script>
+
+    <!-- Render Prices -->
+    <script src="./js/renderPrices.js" type="module"></script>
 
     <!-- Modal Windows -->
     <script src="./js/modal.js" defer></script>

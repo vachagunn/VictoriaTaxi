@@ -1,0 +1,51 @@
+export const cars = [
+  {
+    brand: "Huyndai",
+    model: "Solaris",
+    image: "hyundai_solaris.jpg",
+    class: "Эконом",
+    price: 2100,
+  },
+  {
+    brand: "Volkswagen",
+    model: "Polo",
+    image: "volkswagen_polo.jpg",
+    class: "Эконом",
+    price: 2100,
+  },
+  {
+    brand: "Kia",
+    model: "Rio",
+    image: "kia_rio.jpeg",
+    class: "Комфорт",
+    price: 2200,
+  },
+  {
+    brand: "Kia",
+    model: "Cerato",
+    image: "kia_cerato.jpg",
+    class: "Комфорт",
+    price: 3000,
+  },
+  {
+    brand: "Geely",
+    model: "Emgrand",
+    image: "geely_emgrand.jpg",
+    class: "Комфорт +",
+    price: 3000,
+  },
+  {
+    brand: "Kia",
+    model: "K5",
+    image: "kia_k5.jpg",
+    class: "Бизнес",
+    price: 3500,
+  },
+  {
+    brand: "Sollers",
+    model: "Argo",
+    image: "sollers_argo.jpg",
+    class: "Грузовой",
+    price: 3500,
+  },
+];
