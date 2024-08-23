@@ -77,43 +77,8 @@
         <h2 class="visually-hidden">Преимущества таксопарка</h2>
 
         <div class="container container--sm">
-          <div class="benefits__row">
-            <div class="benefits__item">
-              <img
-                src="./img/benefits/new.svg"
-                alt="Новые автомобили"
-                class="benefits__item-img"
-              />
-              <p class="benefits__item-text">Новые автомобили</p>
-            </div>
-
-            <div class="benefits__item">
-              <img
-                src="./img/benefits/coins.svg"
-                alt="Залог"
-                class="benefits__item-img"
-              />
-              <p class="benefits__item-text">Залог 10 000 ₽</p>
-            </div>
-
-            <div class="benefits__item">
-              <img
-                src="./img/benefits/shield.svg"
-                alt="Страховка"
-                class="benefits__item-img"
-              />
-              <p class="benefits__item-text">Страховка для спокойствия</p>
-            </div>
-
-            <div class="benefits__item">
-              <img
-                src="./img/benefits/location.svg"
-                alt="Выдача в любом месте"
-                class="benefits__item-img"
-              />
-              <p class="benefits__item-text">Выдача в любом месте</p>
-            </div>
-          </div>
+          <!-- Динамический рендер преимуществ -->
+          <div id="benefits__row" class="benefits__row"></div>
         </div>
       </section>
 
@@ -419,6 +384,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Render Benefits -->
+    <script src="./js/renderBenefits.js"></script>
 
     <!-- Render Car Cards -->
     <script src="./js/renderCars.js"></script>
