@@ -12,6 +12,7 @@ export const cars = [
     image: "volkswagen_polo.jpg",
     class: "Эконом",
     price: 2100,
+    link: "volkswagen_polo",
   },
   {
     brand: "Kia",
@@ -19,6 +20,7 @@ export const cars = [
     image: "kia_rio.jpeg",
     class: "Комфорт",
     price: 2200,
+    link: "kia_rio",
   },
   {
     brand: "Kia",
@@ -26,6 +28,7 @@ export const cars = [
     image: "kia_cerato.jpg",
     class: "Комфорт",
     price: 3000,
+    link: "kia_cerato",
   },
   {
     brand: "Geely",
@@ -33,6 +36,7 @@ export const cars = [
     image: "geely_emgrand.jpg",
     class: "Комфорт +",
     price: 3000,
+    link: "geely_emgrand",
   },
   {
     brand: "Kia",
@@ -40,6 +44,7 @@ export const cars = [
     image: "kia_k5.jpg",
     class: "Бизнес",
     price: 3500,
+    link: "kia_k5",
   },
   {
     brand: "Sollers",
@@ -47,5 +52,6 @@ export const cars = [
     image: "sollers_argo.jpg",
     class: "Грузовой",
     price: 3500,
+    link: "sollers_argo",
   },
 ];

@@ -1,0 +1,55 @@
+.car__info {
+  display: flex;
+  margin-top: 40px;
+  column-gap: 50px;
+}
+
+.gallary {
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.car__images {
+  display: flex;
+  column-gap: 5px;
+
+  &--big {
+    width: 400px;
+    height: 415px;
+
+    background-color: antiquewhite;
+  }
+
+  &--big img,
+  &--small div img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &--small {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &--small div {
+    width: 100px;
+    height: 100px;
+
+    background-color: aqua;
+  }
+}
+
+.car__characteristics {
+  &--list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .title-2 {
+    font-size: 16px;
+  }
+}

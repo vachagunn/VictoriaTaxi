@@ -2,8 +2,13 @@ import { cars } from "./data/carsData.js";
 
 const carContainer = document.getElementById("cars__cards");
 
+// Переход на подробную информаию по автомобилю и аренде
+const goToCarPage = (page) => {
+  window.location.href = page;
+};
+
 cars.forEach((car) => {
-  const card = `<a href="#!" class="card">
+  const template = `
     <img
       class="card__image"
       src="./img/cards/${car.image}"
@@ -13,7 +18,13 @@ cars.forEach((car) => {
     <h5 class="card__price">
       от <span class="bold">${car.price} ₽</span> в сутки
     </h5>
-  </a>`;
+    `;
 
-  carContainer.innerHTML += card;
+  const card = document.createElement("div");
+  card.className = "card";
+  card.onclick = () => goToCarPage(`../pages/${car.link}.html`);
+
+  card.innerHTML = template;
+
+  carContainer.appendChild(card);
 });
